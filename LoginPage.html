@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ReciELO</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="homepage.html">Início</a>
+            <a href="#">Votações</a>
+            <a href="#">Postagens</a>
+            <a href="#">Últimas Notícias</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <img src="images/icon.png" alt="Logo do ReciELO" class="logo"> <!-- Substitua 'path/to/logo.png' pelo caminho real da imagem -->
+            <div class="login-form">
+                <form action="/login" method="POST">
+                    <label for="username">CPF:</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <a href="#">Esqueci minha senha</a>
+                    <div class="button-container">
+                        <button type="submit">Entrar</button>
+                        <button type="button">Cadastro</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>ReciELO &copy; 2024</p>
+    </footer>
+</body>
+</html>
